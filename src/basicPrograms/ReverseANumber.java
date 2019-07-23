@@ -10,7 +10,7 @@ public class ReverseANumber {
 		
 		System.out.println("\n Please Enter any Number you want to Reverse : ");
 		Number = sc.nextInt();
-		
+		//256
 		while(Number > 0) {
 			Reminder = Number %10;
 			Reverse = Reverse * 10 + Reminder;

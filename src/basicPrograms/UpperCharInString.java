@@ -10,7 +10,7 @@ public class UpperCharInString {
         char[] array = value.toCharArray();
         for (int i = 0; i < array.length; i++)
         {
-			if(array[i]=='a')
+			if(array[i]=='o')
 			{
 				array[i] = Character.toUpperCase(array[i]);
 			}

@@ -9,10 +9,11 @@ public class RemoveDuplicateChars {
 
 	public static void main(String[] args) {
 		String s="aabbccdef";
+		char[] charArray = s.toCharArray();
 		Set<Character> set=new LinkedHashSet<Character>();
-		for(char c:s.toCharArray())
+		for(Character c:charArray)
 		{
-		    set.add(Character.valueOf(c));
+		    set.add(c);
 		}
 
 		Iterator<Character> itr = set.iterator();
