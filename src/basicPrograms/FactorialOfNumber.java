@@ -3,7 +3,7 @@ package basicPrograms;
 public class FactorialOfNumber {
 //Write a program to find a Factorial of a number.
 	public static void main(String[] args) {
-		 int num = 4;
+		 int num = 5;
 	        long factorial = 1;
 	        for(int i = 1; i <= num; ++i)
 	        {
