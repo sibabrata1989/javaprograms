@@ -13,7 +13,7 @@ public class CountDuplicateCharInString_HashMap {
 	 
 	 char[] strArray = str.toCharArray();
 	 
-	 for (char c : strArray) {
+	 for (Character c : strArray) {
 		if (chrMap.containsKey(c)){
 			chrMap.put(c, chrMap.get(c)+1);
 			

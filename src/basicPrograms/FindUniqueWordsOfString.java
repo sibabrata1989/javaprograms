@@ -11,14 +11,15 @@ public class FindUniqueWordsOfString {
         String[] words = str.split(" ");
         Map<String, Integer> hashMap = new HashMap<String,Integer>();
         for (String word:words) {
-            Integer count = hashMap.get(word);
-            if(count == null) {
-                hashMap.put(word, 1);
-            }
-            else
-            {
-                hashMap.put(word,count+1);
-            }
+          if(hashMap.containsKey(word))
+          {
+              hashMap.put(word,hashMap.get(word)+1);
+          }
+          else
+          {
+              hashMap.put(word,1);
+          }
+
 
         }
         Set<String> keys = hashMap.keySet();

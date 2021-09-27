@@ -18,11 +18,7 @@ public class ReverseAString {
         }
         
         System.out.println("Reversed string is:" +reverse);
-        System.out.println(reverse.replaceAll("\\s", ""));
-        
-        for (int i = 0; i < reverse.length(); i += 2) {
-            System.out.print(reverse.charAt(i));
-        }
+
 	}
 
 }
