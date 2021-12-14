@@ -279,6 +279,89 @@ public class PractiseClass {
 
 
 	}
+
+	private void anagramString(String s1, String s2) {
+		char[] ch1 = s1.replaceAll("\\s", "").toLowerCase().toCharArray();
+		char[] ch2 = s2.replaceAll("\\s", "").toLowerCase().toCharArray();
+		Arrays.sort(ch1);
+		Arrays.sort(ch2);
+		boolean status = Arrays.equals(ch1, ch2);
+		if (status) {
+			System.out.println("anagram");
+		} else {
+			System.out.println("not anagram");
+		}
+	}
+
+		private void amstrongNum(int n)
+		{
+			int c=0,a=0,temp;
+			temp = n;
+			while(n>0)
+			{
+				a=n%10;
+				n=n/10;
+				c=c+(a*a*a);
+			}
+			if(temp==c)
+			{
+				System.out.println("Armstrong num");
+			}
+		}
+		private void countDuplicateChar(String str)
+		{
+			HashMap<Character, Integer> charMap = new HashMap<>();
+			char[] chars = str.toCharArray();
+			for(Character c : chars)
+			{
+				if(charMap.containsKey(c))
+				{
+					charMap.put(c,charMap.get(c)+1);
+				}
+				else
+				{
+					charMap.put(c,1);
+				}
+			}
+			Set<Character> ch = charMap.keySet();
+			for (Character c:ch) {
+				if(charMap.get(c)>1)
+				{
+					System.out.println(c+" : "+charMap.get(c));
+				}
+			}
+		}
+
+		private void findoccurenceOfStringinsenetenceandreverseit(String str)
+		{
+			String reverseSentence = "";
+			HashMap<String, Integer> hashMap = new HashMap<>();
+			String[] words = str.split(" ");
+			for (String word:words) {
+				if(hashMap.containsKey(word))
+				{
+					hashMap.put(word,hashMap.get(word)+1);
+				}
+				else
+				{
+					hashMap.put(word,1);
+				}
+				String revStr = "";
+
+				for(int i = word.length()-1;i>=0;i--)
+				{
+					revStr = revStr + word.charAt(i);
+				}
+				reverseSentence = reverseSentence + revStr + " ";
+
+			}
+			System.out.println(reverseSentence);
+			System.out.println(hashMap);
+		}
+
+
+
+
 	public static void main(String[] args) {
 		PractiseClass pc = new PractiseClass();
 
@@ -288,13 +371,18 @@ public class PractiseClass {
 		//pc.reverseANumber(563);
 		//pc.reverseString("Sibabrata Swain");
 		//pc.reverseWordsInSentence("Siba likes to play badminton");
-		//pc.secondLargestNumber(new int[]{1, 4, 9, 10, 2});
+		pc.secondLargestNumber(new int[]{1, 4, 9, 10, 2});
 		//pc.swapString("siba","swain");
 		//pc.tripletMatchingTheNum(new int[]{1, 2, 1, 4, 5, 6, 0},6);
-		//pc.findPairInArray(new int[]{1,4,5,0,2,3,6,-1,8,-3},5);
+		pc.findPairInArray(new int[]{1,4,5,0,2,3,6,-1,8,-3},5);
 		//pc.Triangle(5);
-		//pc.sortArray(new int[]{1, 2, 5, 3, 7, 4});
-		pc.testFinal();
+		pc.sortArray(new int[]{1, 2, 5, 3, 7, 4});
+		//pc.testFinal();
+		//pc.anagramString("siba","ibas");
+		//pc.amstrongNum(153);
+		//pc.countDuplicateChar("sibabrataswain");
+		pc.findoccurenceOfStringinsenetenceandreverseit("siba is siba");
+		//
 
 
 

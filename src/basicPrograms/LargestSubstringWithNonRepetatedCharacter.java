@@ -26,6 +26,6 @@ public class LargestSubstringWithNonRepetatedCharacter {
                 res = map.keySet().toString();
             }
         }
-        System.out.println(String.join(" ",res));
+        System.out.println(res);
     }
 }
