@@ -1,4 +1,4 @@
-package basicPrograms;
+package basicPrograms.String;
 
 public class SwapTwoStringWithoutThirdString {
     public static void main(String[] args)

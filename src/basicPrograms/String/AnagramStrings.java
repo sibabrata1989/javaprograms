@@ -1,4 +1,4 @@
-package basicPrograms;
+package basicPrograms.String;
 
 import java.util.Arrays;
 

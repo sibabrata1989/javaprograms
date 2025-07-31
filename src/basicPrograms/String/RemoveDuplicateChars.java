@@ -1,4 +1,4 @@
-package basicPrograms;
+package basicPrograms.String;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
@@ -21,5 +21,7 @@ public class RemoveDuplicateChars {
             System.out.print(itr.next());
         }
 	}
+
+
 
 }

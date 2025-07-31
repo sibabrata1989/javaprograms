@@ -1,10 +1,11 @@
-package basicPrograms;
+package basicPrograms.String;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class PrintAStringAfterAGivenCountofcharOccureance {
+    //after a character found with max count occurance print the string
     public static void main(String args[]) {
         String str = "sibabrataswain";
         int count = 4;

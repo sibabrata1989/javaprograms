@@ -1,4 +1,4 @@
-package basicPrograms;
+package basicPrograms.String;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.Set;
 public class FindUniqueWordsOfString {
     public static void main(String[] args)
     {
-        String str = "Siba is a boy. Siba likes to play Badminton . Badminton game required lots of fitness";
+        String str = "Siba is a boy. Siba likes to play Badminton . Badminton game required good fitness";
         String[] words = str.split(" ");
         Map<String, Integer> hashMap = new HashMap<String,Integer>();
         for (String word:words) {

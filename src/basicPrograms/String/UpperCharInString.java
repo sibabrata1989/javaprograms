@@ -1,4 +1,4 @@
-package basicPrograms;
+package basicPrograms.String;
 
 public class UpperCharInString {
 
